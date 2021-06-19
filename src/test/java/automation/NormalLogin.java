@@ -15,9 +15,29 @@ public class NormalLogin {
 
         //Declaration
         WebDriver driver = new ChromeDriver();
-        driver.get(baseUrl);
+        driver.get(baseUrl);  //hit url
         driver.manage().window().maximize();
         System.out.println("URL Entered");
+
+
+    //    driver.close();   //current window closes    L1
+    //    driver.quit();    // chrome multiple windows - close
+
+        //validate current URL
+        System.out.println(driver.getCurrentUrl());
+
+        //credit card number, cvv, banking site Right clikc is disabled, get field element via page source
+        System.out.println(driver.getPageSource());  //L2
+
+      //  assignment check methods via   driver.
+
+
+
+
+
+
+
+
 
     }
 }
